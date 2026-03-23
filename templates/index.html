@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Song Recommender</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #1db954, #191414);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .box {
+            background: #121212;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        select, button {
+            width: 80%;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        button {
+            background: #1db954;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #17a44b;
+        }
+
+        .songs {
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            margin: 15px auto;
+            padding: 15px;
+            width: 300px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #1db954;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎧 Tune Bot </h1>
+
+    <div class="box">
+        <form method="POST">
+            <select name="mood">
+                <option value="">Select Mood</option>
+                <option value="happy">😊 Happy</option>
+                <option value="sad">😢 Sad</option>
+                <option value="gym">💪 Gym</option>
+                <option value="study">📚 Study</option>
+                <option value="romantic">❤️ Romantic</option>
+                <option value="party">🎉 Party</option>
+                <option value="chill">😌 Chill</option>
+                <option value="angry">😡 Angry</option>
+            </select>
+
+            <button type="submit">Get Songs</button>
+        </form>
+    </div>
+
+    <div class="songs">
+        {{ songs|safe }}
+    </div>
+
+    <div class="footer">
+        Made with ❤️ using Flask
+    </div>
+
+</div>
+
+</body>
+</html>
