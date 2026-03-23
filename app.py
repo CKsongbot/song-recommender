@@ -308,11 +308,16 @@ def home():
 
 
 # ---------------- LOGOUT ----------------
-@app.route("/logout")
-def logout():
-    session.pop("user", None)
-    return redirect(url_for("login"))
+@app.route("/", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
 
+        if username in users and users[username] == password:
+            session["user"] = username
+            return redirect("/home")
+        else:
+            return "Invalid login"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+    return render_template("login.html")
