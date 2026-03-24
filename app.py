@@ -14,7 +14,15 @@ music_data = {
 {"name": "Dynamite - BTS", "img": "https://img.youtube.com/vi/gdZLi9oWNZg/0.jpg", "link": "https://www.youtube.com/watch?v=gdZLi9oWNZg"},
 {"name": "Cheer Up - TWICE", "img": "https://img.youtube.com/vi/c7rCyll5AeY/0.jpg", "link": "https://www.youtube.com/watch?v=c7rCyll5AeY"},
 {"name": "Gallan Goodiyaan - Dil Dhadakne Do", "img": "https://img.youtube.com/vi/jCEdTq3j-0U/0.jpg", "link": "https://www.youtube.com/watch?v=jCEdTq3j-0U"},
-{"name": "Badtameez Dil - Yeh Jawaani Hai Deewani", "img": "https://img.youtube.com/vi/II2EO3Nw4m0/0.jpg", "link": "https://www.youtube.com/watch?v=II2EO3Nw4m0"}
+{"name": "Badtameez Dil - Yeh Jawaani Hai Deewani", "img": "https://img.youtube.com/vi/II2EO3Nw4m0/0.jpg", "link": "https://www.youtube.com/watch?v=II2EO3Nw4m0"},
+{"name": "Feel Special - TWICE", "img": "https://img.youtube.com/vi/3ymwOvzhwHs/0.jpg", "link": "https://www.youtube.com/watch?v=3ymwOvzhwHs"},
+
+{"name": "Red Flavor - Red Velvet", "img": "https://img.youtube.com/vi/WyiIGEHQP8o/0.jpg", "link": "https://www.youtube.com/watch?v=WyiIGEHQP8o"},
+
+{"name": "Shine - Pentagon", "img": "https://img.youtube.com/vi/Nu2yQ1zYDYU/0.jpg", "link": "https://www.youtube.com/watch?v=Nu2yQ1zYDYU"},
+
+{"name": "Very Very Very - I.O.I", "img": "https://img.youtube.com/vi/GdxvD7r58ng/0.jpg", "link": "https://www.youtube.com/watch?v=GdxvD7r58ng"},
+{"name": "In Bloom - ZEROBASEONE", "img": "https://img.youtube.com/vi/trzeUClQIIg/0.jpg", "link": "https://www.youtube.com/watch?v=trzeUClQIIg"}
 ],
 
     "sad": [
@@ -30,7 +38,15 @@ music_data = {
 
 {"name": "Channa Mereya - Arijit Singh", "img": "https://img.youtube.com/vi/284Ov7ysmfA/0.jpg", "link": "https://www.youtube.com/watch?v=284Ov7ysmfA"},
 
-{"name": "Agar Tum Saath Ho - Alka Yagnik & Arijit Singh", "img": "https://img.youtube.com/vi/sK7riqg2mr4/0.jpg", "link": "https://www.youtube.com/watch?v=sK7riqg2mr4"}
+{"name": "Agar Tum Saath Ho - Alka Yagnik & Arijit Singh", "img": "https://img.youtube.com/vi/sK7riqg2mr4/0.jpg", "link": "https://www.youtube.com/watch?v=sK7riqg2mr4"},
+{"name": "I Need Somebody - DAY6", "img": "https://img.youtube.com/vi/j-TcFt2OVSw/0.jpg", "link": "https://www.youtube.com/watch?v=j-TcFt2OVSw"},
+
+{"name": "Eyes, Nose, Lips - Taeyang", "img": "https://img.youtube.com/vi/UwuAPyOImoI/0.jpg", "link": "https://www.youtube.com/watch?v=UwuAPyOImoI"},
+
+{"name": "Stay With Me - Chanyeol & Punch", "img": "https://img.youtube.com/vi/pcKR0LPwoYs/0.jpg", "link": "https://www.youtube.com/watch?v=pcKR0LPwoYs"},
+
+{"name": "Lonely - Jonghyun ft. Taeyeon", "img": "https://img.youtube.com/vi/NpTpEsE9G8c/0.jpg", "link": "https://www.youtube.com/watch?v=NpTpEsE9G8c"},
+{"name": "Good Night - ZEROBASEONE", "img": "https://i.ytimg.com/vi/Z0ZyceO05s4/maxresdefault.jpg", "link": "https://www.youtube.com/watch?v=Z0ZyceO05s4"}
     ],
 
     "gym": [
@@ -47,7 +63,16 @@ music_data = {
 
 {"name": "Ghungroo - Arijit Singh & Shilpa Rao", "img": "https://img.youtube.com/vi/qFkNATtc3mc/0.jpg", "link": "https://www.youtube.com/watch?v=qFkNATtc3mc"},
 
-{"name": "Jai Jai Shivshankar - Vishal Dadlani & Benny Dayal", "img": "https://i.ytimg.com/vi/0kfLTq57_Y0/maxresdefault.jpg", "link": "https://www.youtube.com/watch?v=0kfLTq57_Y0"}
+{"name": "Jai Jai Shivshankar - Vishal Dadlani & Benny Dayal", "img": "https://i.ytimg.com/vi/0kfLTq57_Y0/maxresdefault.jpg", "link": "https://www.youtube.com/watch?v=0kfLTq57_Y0"},
+{"name": "God's Menu - Stray Kids", "img": "https://img.youtube.com/vi/TQTlCHxyuu8/0.jpg", "link": "https://www.youtube.com/watch?v=TQTlCHxyuu8"},
+
+{"name": "Kill This Love - BLACKPINK", "img": "https://img.youtube.com/vi/2S24-y0Ij3Y/0.jpg", "link": "https://www.youtube.com/watch?v=2S24-y0Ij3Y"},
+
+{"name": "CRUSH - ZEROBASEONE", "img": "https://img.youtube.com/vi/AZoZbtI67Yk/0.jpg", "link": "https://www.youtube.com/watch?v=AZoZbtI67Yk"},
+
+{"name": "Wonderland - ATEEZ", "img": "https://img.youtube.com/vi/Z_BhMhZpAug/0.jpg", "link": "https://www.youtube.com/watch?v=Z_BhMhZpAug"},
+
+{"name": "BOOMBAYAH - BLACKPINK", "img": "https://img.youtube.com/vi/bwmSjveL3Lc/0.jpg", "link": "https://www.youtube.com/watch?v=bwmSjveL3Lc"}
     ],
 
     "study": [
@@ -83,20 +108,25 @@ music_data = {
         "link": "https://www.youtube.com/watch?v=YxWlaYCA8MU"
     },
     {
-        "name": "Love Scenario - iKON",
-        "img": "https://img.youtube.com/vi/vecSVX1QYbQ/0.jpg",
-        "link": "https://www.youtube.com/watch?v=vecSVX1QYbQ"
-    },
-    {
         "name": "Love Wins All - IU",
         "img": "https://img.youtube.com/vi/JleoAppaxi0/0.jpg",
         "link": "https://www.youtube.com/watch?v=JleoAppaxi0"
     },
-{"name": "Love Scenario - iKON", "img": "https://img.youtube.com/vi/vecSVX1QYbQ/0.jpg", "link": "https://www.youtube.com/watch?v=vecSVX1QYbQ"},
 
 {"name": "Boy With Luv - BTS ft. Halsey", "img": "https://img.youtube.com/vi/XsX3ATc3FbA/0.jpg", "link": "https://www.youtube.com/watch?v=XsX3ATc3FbA"},
 
-{"name": "Raabta - Arijit Singh", "img": "https://img.youtube.com/vi/zlt38OOqwDc/0.jpg", "link": "https://www.youtube.com/watch?v=zlt38OOqwDc"}
+{"name": "Raabta - Arijit Singh", "img": "https://img.youtube.com/vi/zlt38OOqwDc/0.jpg", "link": "https://www.youtube.com/watch?v=zlt38OOqwDc"},
+{"name": "Saiyaara - Shreya Ghoshal", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS778ZoqfGTR_kW3Atp1608_IIHuVarwRBlGQ&s", "link": "https://www.youtube.com/watch?v=asG7cwxi1sA"},
+
+{"name": "My Universe - BTS & Coldplay", "img": "https://img.youtube.com/vi/3YqPKLZF_WU/0.jpg", "link": "https://www.youtube.com/watch?v=3YqPKLZF_WU"},
+
+{"name": "Love Shot - EXO", "img": "https://img.youtube.com/vi/pSudEWBAYRE/0.jpg", "link": "https://www.youtube.com/watch?v=pSudEWBAYRE"},
+
+{"name": "Heart Attack - Chuu (LOONA)", "img": "https://img.youtube.com/vi/BVVfMFS3mgc/0.jpg", "link": "https://www.youtube.com/watch?v=BVVfMFS3mgc"},
+{"name": "Serendipity - BTS (Jimin)", "img": "https://img.youtube.com/vi/gSsCZJM6OG0/0.jpg", "link": "https://www.youtube.com/watch?v=gSsCZJM6OG0"},
+{"name": "Only - Lee Hi", "img": "https://img.youtube.com/vi/KmOVNVZEP9o/0.jpg", "link": "https://www.youtube.com/watch?v=KmOVNVZEP9o"},
+{"name": "Melting Point - ZEROBASEONE", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzIymKx0q0DlK7TeFxTQ885_lgMsiBA5QlQ&s", "link": "https://www.youtube.com/watch?v=LK7ca_PWEoY"}
+
 ],
 
    "party": [
@@ -115,11 +145,7 @@ music_data = {
         "img": "https://img.youtube.com/vi/k4yXQkG2s1E/0.jpg",
         "link": "https://www.youtube.com/watch?v=k4yXQkG2s1E"
     },
-    {
-        "name": "Dilbar - Neha Kakkar",
-        "img": "https://img.youtube.com/vi/TRa9IMvccjg/0.jpg",
-        "link": "https://www.youtube.com/watch?v=TRa9IMvccjg"
-    },
+    {"name": "London Thumakda - Labh Janjua, Sonu Kakkar, Neha Kakkar", "img": "https://img.youtube.com/vi/udra3Mfw2oo/0.jpg", "link": "https://www.youtube.com/watch?v=udra3Mfw2oo"},
     {
         "name": "APT. - ROSE & Bruno Mars",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDE4cb-0HcU2msXPfFtJdP87zlxIG_ObWBlA&s",
@@ -142,7 +168,16 @@ music_data = {
     },
 {"name": "Dynamite - BTS", "img": "https://img.youtube.com/vi/gdZLi9oWNZg/0.jpg", "link": "https://www.youtube.com/watch?v=gdZLi9oWNZg"},
 
-{"name": "Nashe Si Chadh Gayi - Arijit Singh", "img": "https://img.youtube.com/vi/WKbwopSXLWU/0.jpg", "link": "https://www.youtube.com/watch?v=WKbwopSXLWU"}
+{"name": "Nashe Si Chadh Gayi - Arijit Singh", "img": "https://img.youtube.com/vi/WKbwopSXLWU/0.jpg", "link": "https://www.youtube.com/watch?v=WKbwopSXLWU"},
+{"name": "God's Menu - Stray Kids", "img": "https://img.youtube.com/vi/TQTlCHxyuu8/0.jpg", "link": "https://www.youtube.com/watch?v=TQTlCHxyuu8"},
+
+{"name": "Wannabe - ITZY", "img": "https://img.youtube.com/vi/fE2h3lGlOsk/0.jpg", "link": "https://www.youtube.com/watch?v=fE2h3lGlOsk"},
+
+{"name": "HOT - SEVENTEEN", "img": "https://img.youtube.com/vi/gRnuFC4Ualw/0.jpg", "link": "https://www.youtube.com/watch?v=gRnuFC4Ualw"},
+{"name": "Kar Gayi Chull - Badshah, Neha Kakkar", "img": "https://img.youtube.com/vi/NTHz9ephYTw/0.jpg", "link": "https://www.youtube.com/watch?v=NTHz9ephYTw"},
+
+{"name": "Ghungroo - Arijit Singh, Shilpa Rao", "img": "https://img.youtube.com/vi/qFkNATtc3mc/0.jpg", "link": "https://www.youtube.com/watch?v=qFkNATtc3mc"}
+
 ],
 
     "chill": [
@@ -185,7 +220,16 @@ music_data = {
 
 {"name": "Through the Night - IU", "img": "https://img.youtube.com/vi/BzYnNdJhZQw/0.jpg", "link": "https://www.youtube.com/watch?v=BzYnNdJhZQw"},
 
-{"name": "Sham - Aisha", "img": "https://i.ytimg.com/vi/vNSwdLu_ieI/sddefault.jpg", "link": "https://www.youtube.com/watch?v=vNSwdLu_ieI"}
+{"name": "Sham - Aisha", "img": "https://i.ytimg.com/vi/vNSwdLu_ieI/sddefault.jpg", "link": "https://www.youtube.com/watch?v=vNSwdLu_ieI"},
+{"name": "Love Talk - WayV", "img": "https://img.youtube.com/vi/N5qWjQ9j6l0/0.jpg", "link": "https://www.youtube.com/watch?v=N5qWjQ9j6l0"},
+
+{"name": "Instagram - DEAN", "img": "https://img.youtube.com/vi/wKyMIrBClYw/0.jpg", "link": "https://www.youtube.com/watch?v=wKyMIrBClYw"},
+
+{"name": "Palette - IU ft. G-Dragon", "img": "https://img.youtube.com/vi/d9IxdwEFk1c/0.jpg", "link": "https://www.youtube.com/watch?v=d9IxdwEFk1c"},
+
+{"name": "Some - Bolbbalgan4", "img": "https://img.youtube.com/vi/hZmoMyFXDoI/0.jpg", "link": "https://www.youtube.com/watch?v=hZmoMyFXDoI"},
+
+{"name": "Dayfly - SUGA, Heize", "img": "https://img.youtube.com/vi/Z3W0jKcv1SU/0.jpg", "link": "https://www.youtube.com/watch?v=Z3W0jKcv1SU"}
 ],
 
     "angry": [
@@ -227,8 +271,17 @@ music_data = {
 {"name": "Not Today - BTS", "img": "https://img.youtube.com/vi/9DwzBICPhdM/0.jpg", "link": "https://www.youtube.com/watch?v=9DwzBICPhdM"},
 
 {"name": "Zinda - Siddharth Mahadevan", "img": "https://i.ytimg.com/vi/r2LiGO_aiMk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBaMp2fHuxOy4CaWamDPZH8rYQuvg", "link": "https://www.youtube.com/watch?v=r2LiGO_aiMk"},
-{"name": "Malang (Title Track) - Ved Sharma", "img": "https://img.youtube.com/vi/KBIq11mNB0I/0.jpg", "link": "https://www.youtube.com/watch?v=KBIq11mNB0I"}
+{"name": "Malang (Title Track) - Ved Sharma", "img": "https://img.youtube.com/vi/KBIq11mNB0I/0.jpg", "link": "https://www.youtube.com/watch?v=KBIq11mNB0I"},
+{"name": "Fire - BTS", "img": "https://img.youtube.com/vi/ALj5MKjy2BU/0.jpg", "link": "https://www.youtube.com/watch?v=ALj5MKjy2BU"},
+
+{"name": "Thunderous - Stray Kids", "img": "https://img.youtube.com/vi/EaswWiwMVs8/0.jpg", "link": "https://www.youtube.com/watch?v=EaswWiwMVs8"},
+
+{"name": "Guerrilla - ATEEZ", "img": "https://img.youtube.com/vi/2HcVZm_4qAI/0.jpg", "link": "https://www.youtube.com/watch?v=2HcVZm_4qAI"},
+
+{"name": "Savage - aespa", "img": "https://img.youtube.com/vi/WPdWvnAAurg/0.jpg", "link": "https://www.youtube.com/watch?v=WPdWvnAAurg"},
+{"name": "Sultan (Title Track) - Sultan", "img": "https://img.youtube.com/vi/wPxqcq6Byq0/0.jpg", "link": "https://www.youtube.com/watch?v=wPxqcq6Byq0"}
 ],
+
 
     "sleep": [
     {
@@ -276,7 +329,16 @@ music_data = {
         "img": "https://img.youtube.com/vi/BzYnNdJhZQw/0.jpg",
         "link": "https://www.youtube.com/watch?v=BzYnNdJhZQw"
     },
-{"name": "Khairiyat - Arijit Singh", "img": "https://img.youtube.com/vi/hoNb6HuNmU0/0.jpg", "link": "https://www.youtube.com/watch?v=hoNb6HuNmU0"}
+{"name": "Khairiyat - Arijit Singh", "img": "https://img.youtube.com/vi/hoNb6HuNmU0/0.jpg", "link": "https://www.youtube.com/watch?v=hoNb6HuNmU0"},
+{"name": "Always - ZEROBASEONE", "img": "https://i.ytimg.com/vi/4DgrwVhMskA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBqS4-pecwNyG-SHENVvQQi5RjxBg", "link": "https://www.youtube.com/watch?v=g9uSuKs_MN4"},
+
+{"name": "Sweet Night - V", "img": "https://img.youtube.com/vi/N5ShoQimivM/0.jpg", "link": "https://www.youtube.com/watch?v=N5ShoQimivM"},
+
+{"name": "Good Night - CHEN", "img": "https://img.youtube.com/vi/dN-wG4dKzCE/0.jpg", "link": "https://www.youtube.com/watch?v=dN-wG4dKzCE"},
+
+{"name": "All About You - TAEYEON", "img": "https://i.ytimg.com/vi/y9dpVNRSA6k/mqdefault.jpg", "link": "https://www.youtube.com/watch?v=y9dpVNRSA6k"},
+
+{"name": "밤편지 (Dear Name) - IU", "img": "https://img.youtube.com/vi/8zsYZFvKniw/0.jpg", "link": "https://www.youtube.com/watch?v=8zsYZFvKniw"}
 ]
 }
 def get_songs(user_input):
