@@ -5,16 +5,34 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: white;
-            text-align: center;
-        }
-
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #1a2a33, #0f2027 60%);
+    color: white;
+    text-align: center;
+}
         h1 {
-            margin-top: 30px;
-background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-        }
+    margin-top: 30px;
+    font-size: 3rem;
+    letter-spacing: 3px;
+
+    background: linear-gradient(90deg, #1db954, #10b040, #ff4ecd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+color: #1db954;
+    text-shadow:
+        0 0 5px #1db954,
+        0 0 5px #1db954,
+        0 0 10px #1db954;
+animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
 
         .box {
             margin-top: 20px;
@@ -33,20 +51,35 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
         }
 
         select {
-            background: #1e1e1e;
-            color: white;
-        }
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 12px;
+}
+
 
         button {
-            background: #1db954;
-            color: white;
-            cursor: pointer;
-        }
-
+    background: linear-gradient(45deg, #1db954, #1ed760);
+    box-shadow: 0 5px 15px rgba(0,255,150,0.3);
+}
         button:hover {
             background: #17a44b;
         }
+.play-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: linear-gradient(45deg, #1db954, #1ed760);
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,255,150,0.3);
+}
 
+.play-btn:hover {
+    transform: scale(1.08);
+}
         /* SONG GRID */
         .songs-container {
             display: grid;
@@ -57,20 +90,52 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 
         /* CARD STYLE */
         .card {
-            background: #1e1e1e;
-            padding: 15px;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    padding: 15px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    animation: fadeIn 0.5s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.card {
+    animation: fadeIn 0.7s ease;
+}
+.try-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.try-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
         .card:hover {
-            transform: scale(1.05);
-            background: #282828;
-        }
+    transform: translateY(-10px) scale(1.03);
+}
 
         img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         a {
@@ -120,8 +185,8 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
         <div class="card">
             <img src="{{ song.img }}" alt="cover">
             <b>{{ song.name }}</b>
-            <a href="{{ song.link }}" target="_blank">▶ Play</a>
-<button onclick="window.location.href='/'">🔄 Try Another Mood</button>
+            <a href="{{ song.link }}" target="_blank" class="play-btn">▶ Play</a>
+<a href="/" class="try-btn">🔄 Try Another Mood</a>
         </div>
     {% endfor %}
 {% else %}
