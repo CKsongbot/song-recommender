@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song Recommender</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        }
+
+        .box {
+            margin-top: 20px;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            margin: 5px;
+        }
+
+        select {
+            background: #1e1e1e;
+            color: white;
+        }
+
+        button {
+            background: #1db954;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #17a44b;
+        }
+
+        /* SONG GRID */
+        .songs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        /* CARD STYLE */
+        .card {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: #282828;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1db954;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎧 Tune Bot 🎧</h1>
+
+    <div class="box">
+        <form method="POST" action="/">
+            <select name="mood" required>
+                <option value="">Hello! Pick your mood 👇</option>
+                <option value="happy">😊 Happy</option>
+                <option value="sad">😢 Sad</option>
+                <option value="gym">💪 Gym</option>
+                <option value="study">📚 Study</option>
+                <option value="romantic">❤️ Romantic</option>
+                <option value="party">🎉 Party</option>
+                <option value="chill">😌 Chill</option>
+                <option value="angry">😡 Angry</option>
+                <option value="sleep">😴 Sleep</option>
+            </select>
+
+            <br>
+
+            <button type="submit">Get Songs</button>
+        </form>
+    </div>
+
+    <!-- SONG RESULTS -->
+<div class="songs-container">
+
+{% if songs %}
+    {% for song in songs %}
+        <div class="card">
+            <img src="{{ song.img }}" alt="cover">
+            <b>{{ song.name }}</b>
+            <a href="{{ song.link }}" target="_blank">▶ Play</a>
+<button onclick="window.location.href='/'">🔄 Try Another Mood</button>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No songs found</p>
+{% endif %}
+
+</div>
+
+</body>
+</html>
