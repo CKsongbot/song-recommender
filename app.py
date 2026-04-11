@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
+from difflib import get_close_matches
 import random
 
 app = Flask(__name__)
@@ -341,6 +342,41 @@ music_data = {
 {"name": "밤편지 (Dear Name) - IU", "img": "https://img.youtube.com/vi/8zsYZFvKniw/0.jpg", "link": "https://www.youtube.com/watch?v=8zsYZFvKniw"}
 ]
 }
+def detect_mood(text):
+    text = text.lower()
+
+    mood_map = {
+        "happy": ["happy", "joy", "excited", "good", "great"],
+        "sad": ["sad", "depressed", "cry", "heartbroken", "low"],
+        "gym": ["gym", "workout", "energy", "power"],
+        "study": ["study", "focus", "concentrate"],
+        "romantic": ["love", "romantic", "crush"],
+        "party": ["party", "dance", "fun"],
+        "chill": ["chill", "relax", "calm"],
+        "angry": ["angry", "mad", "rage"],
+        "sleep": ["sleep", "tired", "night"]
+    }
+
+    for mood, keywords in mood_map.items():
+        if any(word in text for word in keywords):
+            return mood
+
+  
+    all_keywords = []
+    keyword_to_mood = {}
+
+    for mood, keywords in mood_map.items():
+        for word in keywords:
+            all_keywords.append(word)
+            keyword_to_mood[word] = mood
+
+    matches = get_close_matches(text, all_keywords, n=1, cutoff=0.6)
+
+    if matches:
+        return keyword_to_mood[matches[0]]
+
+    
+    return None
 def get_songs(user_input):
     if not user_input:
         return "<div class='card'>Please select a mood</div>"
@@ -350,7 +386,7 @@ def get_songs(user_input):
     if user_input in songs:
         result = ""
 
-        # pick 2 random songs
+        
         for song in random.sample(songs[user_input], 2):
             result += f"""
             <div class='card'>
@@ -374,8 +410,46 @@ def home():
 
     if request.method == "POST":
         mood = request.form.get("mood")
-        songs = music_data.get(mood, [])   # 👈 IMPORTANT
+        songs = music_data.get(mood, [])
 
     return render_template("index.html", songs=songs, mood=mood)
+
+
+@app.route("/get_songs", methods=["POST"])
+def get_songs():
+    user_text = request.json.get("mood")
+
+    detected_mood = detect_mood(user_text)
+
+   
+    if not detected_mood:
+        from difflib import get_close_matches
+
+        all_keywords = []
+        for mood, keywords in {
+            "happy": ["happy", "joy", "excited", "good", "great"],
+            "sad": ["sad", "depressed", "cry", "heartbroken", "low"],
+            "gym": ["gym", "workout", "energy", "power"],
+            "study": ["study", "focus", "concentrate"],
+            "romantic": ["love", "romantic", "crush"],
+            "party": ["party", "dance", "fun"],
+            "chill": ["chill", "relax", "calm"],
+            "angry": ["angry", "mad", "rage"],
+            "sleep": ["sleep", "tired", "night"]
+        }.items():
+            all_keywords.extend(keywords)
+
+        matches = get_close_matches(user_text.lower(), all_keywords, n=1, cutoff=0.6)
+
+        return jsonify({
+            "error": "unknown",
+            "suggestion": matches[0] if matches else None
+        })
+
+   
+    songs = music_data.get(detected_mood, [])
+    return jsonify(songs)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
