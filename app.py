@@ -53,7 +53,7 @@ music_data = {
     "gym": [
         {"name": "Stronger - Kanye West", "img": "https://img.youtube.com/vi/PsO6ZnUZI0g/0.jpg", "link": "https://www.youtube.com/watch?v=PsO6ZnUZI0g"},
         {"name": "Till I Collapse - Eminem", "img": "https://img.youtube.com/vi/ytQ5CYE1VZw/0.jpg", "link": "https://www.youtube.com/watch?v=ytQ5CYE1VZw"},
-        {"name": "Jump - BLACKPINK", "img": "https://i.ytimg.com/vi/CgCVZdcKcqY/maxresdefault.jpg", "link": "https://www.youtube.com/watch?v=CgCVZdcKcqY"},
+        {"name": "Curious - AND2BLE", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2U_q_K_gFB2LiToRf-Kw55MSOCWP4H5qzO0v5YAqxNA&s", "link": "https://www.youtube.com/watch?v=m6kmpiOsLVk"},
         {"name": "Magnetic - ILLIT", "img": "https://img.youtube.com/vi/Vk5-c_v4gMU/0.jpg", "link": "https://www.youtube.com/watch?v=Vk5-c_v4gMU"},
         {"name": "Believer - Imagine Dragons", "img": "https://img.youtube.com/vi/7wtfhZwyrcc/0.jpg", "link": "https://www.youtube.com/watch?v=7wtfhZwyrcc"},
 {"name": "How You Like That - BLACKPINK", "img": "https://img.youtube.com/vi/ioNng23DkIM/0.jpg", "link": "https://www.youtube.com/watch?v=ioNng23DkIM"},
@@ -77,7 +77,7 @@ music_data = {
     ],
 
     "study": [
-        {"name": "Lo-fi Beats", "img": "https://img.youtube.com/vi/jfKfPfyJRdk/0.jpg", "link": "https://www.youtube.com/watch?v=jfKfPfyJRdk"},
+        {"name": "Lo-fi Beats", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxJh7ThgkVPySm9B84qs6X8WSpEt_ArlBScs_VpkEAw&s=10", "link": "https://youtu.be/lTRiuFIWV54?si=RVotaZAy5OHwWnVN"},
         {"name": "Weightless", "img": "https://img.youtube.com/vi/UfcAVejslrU/0.jpg", "link": "https://www.youtube.com/watch?v=UfcAVejslrU"},
         {"name": "Clair de Lune - Debussy", "img": "https://img.youtube.com/vi/CvFH_6DNRCY/0.jpg", "link": "https://www.youtube.com/watch?v=CvFH_6DNRCY"}
     ],
@@ -124,7 +124,7 @@ music_data = {
 {"name": "Love Shot - EXO", "img": "https://img.youtube.com/vi/pSudEWBAYRE/0.jpg", "link": "https://www.youtube.com/watch?v=pSudEWBAYRE"},
 
 {"name": "Heart Attack - Chuu (LOONA)", "img": "https://img.youtube.com/vi/BVVfMFS3mgc/0.jpg", "link": "https://www.youtube.com/watch?v=BVVfMFS3mgc"},
-{"name": "Serendipity - BTS (Jimin)", "img": "https://img.youtube.com/vi/gSsCZJM6OG0/0.jpg", "link": "https://www.youtube.com/watch?v=gSsCZJM6OG0"},
+{"name": "TOP5 - ZEROBASEONE", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSilQ79800ztK6N5JfD-YFcoyO_k2RoCXTo5RUNGBhFr0mbqKypF5DPwR_C&s=10", "link": "https://www.youtube.com/watch?v=7QGRDC7ngpE"},
 {"name": "Only - Lee Hi", "img": "https://img.youtube.com/vi/KmOVNVZEP9o/0.jpg", "link": "https://www.youtube.com/watch?v=KmOVNVZEP9o"},
 {"name": "Melting Point - ZEROBASEONE", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzIymKx0q0DlK7TeFxTQ885_lgMsiBA5QlQ&s", "link": "https://www.youtube.com/watch?v=LK7ca_PWEoY"}
 
