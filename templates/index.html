@@ -52,7 +52,7 @@ transform: scale(1.3);
 .like-btn:hover {
     transform: scale(1.15);
     box-shadow: 0 0 18px rgba(255, 78, 205, 0.8);
-}       
+}      
  body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -85,7 +85,22 @@ color: #1db954;
     text-shadow: 0 0 10px rgba(29,185,84,0.6);
 animation: gradientMove 6s ease infinite;
 }
+.hero-text{
+    max-width:700px;
+    margin:10px auto 25px auto;
 
+    padding:15px 25px;
+
+    background:rgba(0,0,0,0.25);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:15px;
+
+    color:white;
+
+    text-shadow:0 0 5px rgba(0,0,0,0.5);
+}
 .box {
     margin-top: 30px;
 }
@@ -149,6 +164,52 @@ transform: scale(1.05);
 .play-btn:hover {
     transform: scale(1.08);
 }
+.feature-section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin:40px auto;
+}
+
+.feature-card{
+    width:220px;
+
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(20px);
+
+    padding:22px;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.4),
+        0 0 15px rgba(29,185,84,0.15);
+
+    transition:all 0.3s ease;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px) scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.5),
+        0 0 25px rgba(29,185,84,0.5);
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(29,185,84,0.5);
+}
+.feature-card h3{
+    color:#1ed760;
+}
+
+.feature-card p{
+    color:rgba(255,255,255,0.85);
+}
         /* SONG GRID */
         .songs-container {
     display: grid;
@@ -181,7 +242,7 @@ transform: scale(1.05);
     border-radius: 22px;
 
     border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(0,0,0,0.4),
         0 0 20px rgba(255,255,255,0.08);
 
@@ -264,9 +325,10 @@ img {
         }
 /* CHATBOT UI */
 .chat-container {
-    width: 420px;
+    width: 550px;
     margin: 40px auto;
-    
+   position: relative;
+overflow: hidden;
     background: rgba(20, 20, 20, 0.6);
     backdrop-filter: blur(20px);
 
@@ -281,7 +343,38 @@ animation: floatIn 0.6s ease;
 .chat-container {
     animation: float 6s ease-in-out infinite;
 }
+.chat-container::before{
+    content:'';
 
+    position:absolute;
+
+    top:0;
+    left:-150%;
+
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.08),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:shine 8s infinite;
+}
+@keyframes shine{
+
+    0%{
+        left:-150%;
+    }
+
+    100%{
+        left:250%;
+    }
+}
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-6px); }
@@ -345,7 +438,7 @@ animation: floatIn 0.6s ease;
     padding: 12px;
     border-radius: 12px;
     border: none;
-
+   font-size:16px;
     background: rgba(255,255,255,0.08);
     color: white;
     outline: none;
@@ -444,6 +537,7 @@ animation: floatIn 0.6s ease;
 }
 .bot-message, .user-message {
     animation: fadeSlide 0.4s ease;
+font-size:16px;
 }
 .mood-buttons button::after {
     content: "";
@@ -625,15 +719,64 @@ text-shadow: 0 0 10px rgba(255, 45, 85, 0.6);
         transform: translateY(-20px) scale(2);
     }
 }
+/* MUSIC NOTES BACKGROUND */
+
+#music-notes {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.music-note {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    filter: blur(1px);
+    text-shadow:
+        0 0 10px currentColor,
+        0 0 20px currentColor,
+        0 0 30px currentColor;
+
+    animation: musicFloat linear forwards;
+}
+
+@keyframes musicFloat {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(0.5);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.4;
+    }
+
+    90% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(-130vh) rotate(360deg) scale(1.4);
+        opacity: 0;
+    }
+}
 </style>
 
 </head>
 
 <body>
 
-    <h1>🎧 Tune Bot 🎧</h1>
+<div id="music-notes"></div>
+   <h1>🎧 Tune Bot 🎧</h1>
+
 <p style="opacity:0.7; margin-top:-10px;">
     Your AI Music Companion 🎶
+</p>
+
+<p class="hero-text">
+    Discover songs based on your mood instantly!
+    Type how you feel or select a mood button and Tune Bot will recommend songs that match your vibe.
 </p>
 <div class="chat-container">
     <div id="chat-box" class="chat-box">
@@ -663,7 +806,29 @@ text-shadow: 0 0 10px rgba(255, 45, 85, 0.6);
 
 </div>
 
+<div class="feature-section">
 
+    <div class="feature-card">
+        <h3>🎵 50+ Songs</h3>
+        <p>Recommendations across multiple moods</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>😊 8 Moods</h3>
+        <p>Happy, Sad, Gym, Study and more</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>❤️ Favorites</h3>
+        <p>Save songs you like instantly</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>⚡ Fast Response</h3>
+        <p>Instant song recommendations</p>
+    </div>
+
+</div>
 
     <!-- SONG RESULTS -->
 
@@ -708,10 +873,10 @@ function quickMood(mood) {
     });
     event.target.classList.add("active");
 
-    
+   
     setTimeout(() => {
         sendMessage();
-    }, 400); 
+    }, 400);
 }
 function sendMessage() {
     const input = document.getElementById("user-input");
@@ -720,7 +885,7 @@ function sendMessage() {
 
     if (message === "") return;
 
-    
+   
     const userMsg = document.createElement("div");
     userMsg.className = "user-message";
     userMsg.innerText = message;
@@ -826,7 +991,7 @@ const responses = [
 botMsg.innerText = responses[Math.floor(Math.random() * responses.length)];
 chatBox.appendChild(botMsg);
 
-    
+   
 const container = document.querySelector(".songs-container");
 container.innerHTML = "";
 
@@ -906,7 +1071,7 @@ document.addEventListener("click", function(e) {
         let likedSongs = JSON.parse(localStorage.getItem("likedSongs")) || [];
 
         if (btn.classList.contains("active")) {
-            
+           
             likedSongs = likedSongs.filter(song => song !== songName);
             btn.classList.remove("active");
             btn.innerText = "♡";
@@ -950,7 +1115,7 @@ function closePopup() {
 function clearLiked() {
     localStorage.removeItem("likedSongs");
 
-    
+   
     document.querySelectorAll(".like-btn").forEach(btn => {
         btn.classList.remove("active");
         btn.innerText = "♡";
@@ -982,16 +1147,69 @@ document.getElementById("user-input").addEventListener("keypress", function(e) {
 });
 let currentMood = "happy"; // default
 
-// detect mood from your existing logic
 function setMoodParticles(mood) {
     currentMood = mood;
 }
 
 // call this inside your existing mood detection
 // example: setMoodParticles("happy");
+/* FLOATING MUSIC NOTES */
 
 let lastParticleTime = 0;
 
+function createMusicNote() {
+
+    const note = document.createElement("div");
+
+    note.className = "music-note";
+
+    const notes = ["♪", "♫", "♬", "♩"];
+
+    note.innerText =
+        notes[Math.floor(Math.random() * notes.length)];
+
+    // Random horizontal position
+    note.style.left =
+        Math.random() * 100 + "%";
+
+    // Start from bottom of screen
+    note.style.bottom = "-50px";
+
+    // Random size
+    note.style.fontSize =
+        (20 + Math.random() * 40) + "px";
+
+    // Random speed
+    note.style.animationDuration =
+        (8 + Math.random() * 8) + "s";
+
+    // Random green shades
+    const greens = [
+        "#1db954",
+        "#39ff14",
+        "#00ff99",
+        "#7fff00"
+    ];
+
+    note.style.color =
+        greens[Math.floor(Math.random() * greens.length)];
+
+    document
+        .getElementById("music-notes")
+        .appendChild(note);
+
+    setTimeout(() => {
+        note.remove();
+    }, 10000);
+}
+
+setInterval(() => {
+
+    for (let i = 0; i < 3; i++) {
+        createMusicNote();
+    }
+
+}, 1000);
 document.addEventListener("mousemove", function(e) {
 
     const now = Date.now();
